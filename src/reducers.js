@@ -5,7 +5,7 @@ import {
 } from './actions'
 
 
-function selectedsubreddit( state = 'reactjs', action){
+function selectedSubreddit( state = 'reactjs', action){
   switch (action.type) {
     case SELECT_SUBREDDIT:
       return action.subreddit
@@ -57,7 +57,7 @@ function postsBySubreddit( state = {}, action){
 
 const rootReducer = combineReducers({
   postsBySubreddit,
-  selectedsubreddit
+  selectedSubreddit
 })
 
 export default rootReducer
